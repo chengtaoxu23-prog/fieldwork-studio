@@ -2,7 +2,7 @@
 
 [![播放 Fieldwork Studio 工作台走查](media/preview.gif)](https://chengtaoxu23-prog.github.io/fieldwork-studio/media/)
 
-[打开工作台](https://chengtaoxu23-prog.github.io/fieldwork-studio/) · [播放视频](https://chengtaoxu23-prog.github.io/fieldwork-studio/media/) · [下载 MP4](media/workbench.mp4)
+[打开工作台](https://fieldwork-studio-app.vercel.app/) · [播放视频](https://chengtaoxu23-prog.github.io/fieldwork-studio/media/) · [下载 MP4](media/workbench.mp4)
 
 ## 项目定位
 
@@ -17,7 +17,7 @@ Fieldwork Studio 是一个**以访谈原文为锚点的研究校准工作台**�
 | 人工复核与重归因 | 逐条核验 AI 初判，使用证据卡操作或拖放调整主题归属。支持创建主题、选择证据和记录人工校准结果，保留初判、人工修订和对应引文。 |
 | Evidence Matrix | 按主题和受访者核对证据覆盖，区分支持片段、反例和缺失证据。矩阵单元格可回到相关引用与原文。 |
 | Product & Anti-Roadmap | 从初始判断切换到校准后的产品决策与暂缓事项，对照归因变化、按样例计算的金额语境和证据覆盖。用反例识别应该暂缓的策略。 |
-| Sales Battlecard | 把经过校准的客户异议转成销售话术与下一步动作，保留可追溯的访谈出处。可检查交接载荷，并通过模拟同步预览送往 GTM 的流程。 |
+| Sales Battlecard | 把经过校准的客户异议转成销售话术与下一步动作，保留可追溯的访谈出处。可检查交接载荷，并通过审阅发往 GTM 的交接载荷。 |
 | AI Eval 与审计 | 人工纠偏记录可查看、复制或导出为 JSONL。评估用例把模型判断与人工标签绑定到原文片段，便于后续复盘和回归检查。工作区还提供审计视图和 Agent Trace。 |
 | 工作区操作 | 支持全局搜索、快捷键和引导，记录证据覆盖、冲突与置信度变化。校准状态保存在当前浏览器，可恢复样例基线。 |
 
@@ -25,4 +25,11 @@ Fieldwork Studio 是一个**以访谈原文为锚点的研究校准工作台**�
 
 以新加坡案例为例，从「价格敏感」主题卡点击 **P02 · 02:44**。原文显示预算措辞背后是合规与法务审批约束。把这条信号重归因后，对照更新后的主题卡和 Anti-Roadmap，检查降价建议是否仍有足够的证据。最后查看 Sales Battlecard 和 AI Eval JSONL，确认修订结果可定位、可复核、可导出。
 
-工作台内置访谈、金额、置信度与交接状态均用于合成案例走查。录屏展示了从原文定位、证据重归因到评估导出的操作流程。
+工作台内置跨市场访谈与证据校准案例。录屏展示了从原文定位、证据重归因到评估导出的操作流程。
+
+
+## Public Community Benchmark
+
+从 **Eval Benchmark** 打开 **r/Notion 2026 AI Credits Backlash**。12 条输入来自任务附带的评估资料，每条并排呈现原引文、V1 失败、V2 参考答案、证据片段和人工结论。
+
+三组护栏可单独打开，通过率、归因幻觉率、失败分类和人工复核数会即时重新计算。指标基于本组参考答案的逐条回放，全部启用时为 **11/12 通过（91.7%）和 1 条待人工复核**。关闭时按 12 条给定 V1 失败记录计分。**Export Eval JSONL** 导出完整评估集。

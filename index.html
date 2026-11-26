@@ -10,8 +10,33 @@
     <title>Fieldwork Studio</title>
     <script type="module" crossorigin src="./assets/index-DQd55N4i.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-BOzRngt7.css">
+    <link rel="stylesheet" href="./assets/notion-eval.css">
   </head>
   <body>
     <div id="root"></div>
+    <button id="open-community-eval" type="button">Eval Benchmark</button>
+    <dialog id="community-eval" aria-labelledby="community-eval-title">
+      <header>
+        <h2 id="community-eval-title">r/Notion 2026 AI Credits Backlash (12 Real-World Noisy Cases)</h2>
+        <div><button data-export type="button">Export Eval JSONL</button> <button data-close type="button">Close</button></div>
+      </header>
+      <p>Public Community Benchmark (r/Notion 2026 Pricing &amp; AI Credits)</p>
+      <p>Case-by-case reference replay · 12 supplied evaluation records · toggle a rule to switch its failure classes from V1 to V2.</p>
+      <div class="eval-rules" aria-label="Guardrail toggles"></div>
+      <div class="eval-stats" aria-live="polite">
+        <div>Pass Rate <b data-metric="pass"></b></div>
+        <div>Hallucination Rate <b data-metric="hallucinations"></b></div>
+        <div>HITL Flagged <b data-metric="flagged"></b></div>
+      </div>
+      <h3>Bad Case Distribution</h3>
+      <div class="eval-breakdown" aria-live="polite"></div>
+      <div class="eval-table" tabindex="0" aria-label="Benchmark results">
+        <table>
+          <thead><tr><th>Case</th><th>Raw quote</th><th>V1 output</th><th>V2 reference</th><th>Verdict</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </dialog>
+    <script type="module" src="./assets/notion-eval.js"></script>
   </body>
 </html>

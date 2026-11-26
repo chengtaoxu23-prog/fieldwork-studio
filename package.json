@@ -1,0 +1,8 @@
+{
+  "name": "fieldwork-studio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node --check assets/notion-cases.js && node --check assets/notion-eval.js && node --check assets/index-DQd55N4i.js"
+  }
+}

@@ -1,0 +1,37 @@
+#open-community-eval {
+  position: fixed; bottom: 16px; left: 70px; z-index: 20;
+  border: 1px solid #31796b; border-radius: 8px; background: #123a36;
+  color: #c0fff0; padding: 9px 13px; font: 600 13px Inter, sans-serif;
+}
+#community-eval {
+  width: min(1320px, calc(100vw - 24px)); max-height: calc(100dvh - 24px);
+  overflow: auto; margin: auto; padding: clamp(14px, 3vw, 30px);
+  background: #f6f8fc; color: #18243a; border: 1px solid #dbe5f3;
+  border-radius: 14px; box-shadow: 0 20px 70px #07162270;
+  font: 14px/1.5 Inter, system-ui, sans-serif;
+}
+#community-eval::backdrop { background: #101a2b99; }
+#community-eval header, #community-eval .eval-rules, #community-eval .eval-breakdown {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 9px;
+}
+#community-eval header { justify-content: space-between; }
+#community-eval h2 { font-size: clamp(18px, 3vw, 27px); font-weight: 750; }
+#community-eval h3 { margin-top: 14px; font-weight: 700; }
+#community-eval p { color: #485871; margin-block: 7px 12px; }
+#community-eval button, #community-eval label, .eval-breakdown span {
+  border: 1px solid #cbd7eb; border-radius: 6px; padding: 6px 10px; background: white;
+}
+#community-eval button[data-export] { color: white; background: #173b75; border-color: #173b75; }
+#community-eval label { display: flex; align-items: center; gap: 6px; }
+.eval-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 12px; }
+.eval-stats div { padding: 8px 10px; border-radius: 7px; background: #e8effa; }
+.eval-stats b { display: block; font-size: 20px; }
+.eval-table { overflow: auto; margin-top: 12px; border: 1px solid #dbe5f3; border-radius: 8px; }
+.eval-table table { width: 100%; min-width: 860px; border-collapse: collapse; }
+.eval-table :is(th,td) { white-space: pre-line; padding: 10px; vertical-align: top; border-bottom: 1px solid #dbe5f3; }
+.eval-table th { text-align: left; background: #e8effa; }
+.eval-table td { background: white; }
+.eval-table .eval-quote { color: #164781; }
+.eval-table .eval-pass { color: #10614d; }
+.eval-table .eval-fail { color: #a3173b; }
+.eval-table .eval-review { color: #844b0c; }
