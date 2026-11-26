@@ -1,8 +1,8 @@
 # Fieldwork Studio
 
-[![播放 Fieldwork Studio 工作台走查](media/preview.gif)](https://chengtaoxu23-prog.github.io/fieldwork-studio/media/)
+[![Fieldwork Studio · 30 秒工作台走查](media/portfolio-walkthrough.gif)](media/portfolio-walkthrough.mp4)
 
-[打开工作台](https://fieldwork-studio-app.vercel.app/) · [播放视频](https://chengtaoxu23-prog.github.io/fieldwork-studio/media/) · [下载 MP4](media/workbench.mp4)
+[打开在线工作台](https://fieldwork-studio-app.vercel.app/) · [下载 30 秒录屏](media/portfolio-walkthrough.mp4)
 
 ## 项目定位
 
